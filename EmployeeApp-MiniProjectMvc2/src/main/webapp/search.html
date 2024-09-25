@@ -1,0 +1,50 @@
+<script type="text/javascript">
+
+function isHtml(){
+	frm.source.value="html";
+	validate();
+}
+
+function isExcel(){
+	frm.source.value="excel";
+	validate();
+}
+
+function validate(){
+	if(frm.desgselectedIndex==0){
+		alert("you must select the designation .");
+		return false;
+	}
+	else{
+		frm.submit();
+		return true;
+	}
+}
+</script>
+
+<form action="controller" method="POST" target="f2" name="frm">
+
+	<table bgcolor="cyan" align="center" >
+	<tr>
+	<td colspan="2"><h1 style="color:red;text-align:center;">Searching the employee details  </h1></td>
+	</tr>
+	<tr>
+	<td>Select Desg:: </td>
+	<td>
+					<select name="desg">								
+								<option value="CLERK">CLERKS </option>
+                     			<option value="MANAGER">MANAGERS </option>
+                    			 <option value="SALESMAN">SALESMEN </option>
+                    			 <option value="ANALYST">ANALYSTS </option>
+					</select>
+		</td>
+		</tr>
+		<tr>
+		<td><input type="submit"  value="HTMLOUTPUT" name="s1" onclick="isHtml()" ></td>
+		<td><input type="submit"  value="EXCELOUTPUT" name="s1"  onclick="isExcel()" ></td>
+		</tr>
+	</table>
+	
+	<input type="hidden" name="source" />
+	
+</form>

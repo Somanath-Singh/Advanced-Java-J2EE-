@@ -1,0 +1,18 @@
+/*Utility classes*/
+.primary-background{
+	background:rgba(72, 52, 212,1.0) !important;
+}
+.content-padding{
+	padding:46px 0;
+}
+ .banner-background{
+      clip-path: polygon(50% 0%, 100% 0, 100% 93%, 68% 100%, 36% 95%, 0 100%, 0 0);
+   }
+   
+   /*show-blog-page.css */
+   
+   .post-title{
+   	font-weight:100;
+   }
+   
+  

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All types of forms</title>
+    <style>
+    input{
+    padding:7px;
+    }
+    </style>
+</head>
+<body>
+<h1 style="color:red;text-align:center;">HTML to servlet using all types of form components</h1>
+
+<form action="formurl" method="GET">
+<table border="0" align="center" bgcolor="cyan">
+<tr>
+	<td>name::</td>
+	<td><input type="text" name="name"></td>
+</tr>
+
+ <tr>
+	<td>age::</td>
+	<td><input type="text" name="ages"></td>
+</tr>
+
+<tr>
+	<td>Address::</td>
+	<td><textarea name="addrs" row="4" cols="10"></textarea></td>
+</tr>
+
+<tr>
+	<td>Gender::</td>
+	<td><input type="radio" name="gender" value="M">Male&nbsp;&nbsp;&nbsp;&nbsp;
+	    <input type="radio" name="gender" value="F">Female&nbsp;&nbsp;&nbsp;&nbsp; </td>
+</tr>
+
+<tr>
+	<td>Hobbies::</td>
+	<td><input type="checkbox" name="hb" value="books" checked>Reading Books&nbsp;&nbsp;&nbsp;&nbsp;
+	    <input type="checkbox" name="hb" value="TV" checked>Watchin TV&nbsp;&nbsp;&nbsp;&nbsp;<br>
+	    <input type="checkbox" name="hb" value="stamp" >Stamp collection&nbsp;&nbsp;&nbsp;&nbsp;
+	    <input type="checkbox" name="hb" value="games">Playing games&nbsp;&nbsp;&nbsp;&nbsp; </td>
+</tr>
+
+<tr>
+	<td>Maritial status::</td>
+	<td><input type="checkbox" name="ms" value="married" checked>Married&nbsp;&nbsp;&nbsp;&nbsp;</td>
+</tr>
+
+<tr>
+<td>Qualification::</td>
+<td>
+<select name="qlfy">
+<option value="" selected>---select a value---</option>
+<option value="Engg">BE/B.Tech</option>
+<option value="Arts">B.A/M.A</option>
+<option value="Medicine">MBBS/MD</option>
+<option value="Arts">BA/MA</option>
+<option value="Medicine">MBBS/MD</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td>Favorite places::</td>
+<td>
+<select name="favplaces" multiple="multiple">
+<option value="Delhi">delhi</option>
+<option value="Goa">Goa</option>
+<option value="Mumbai">Mumbai</option>
+<option value="MunnarHills">MunnarHills</option>
+<option value="Hyderabad">Hyderabad</option>
+<option value="Chennai">Chennai</option>
+</select>
+</td>
+</tr>
+
+<tr>
+	<td>Telephone No::</td>
+	<td><input type="tel" name="mobileno">
+</tr>
+
+<tr>
+	<td>Favcolor::</td>
+	<td><input type="color" name="favcolor">
+</tr>
+
+
+<tr>
+	<td>DOB(Date of Birth)::</td>
+	<td><input type="date" name="dob">
+</tr>
+
+<tr>
+	<td>Time of Birth::</td>
+	<td><input type="time" name="tob">
+</tr>
+
+<tr>
+	<td>Date and Time of Joining::</td>
+	<td><input type="datetime local" name="doj">
+</tr>
+
+<tr>
+	<td>Favorite No::</td>
+	<td><input type="number" name="favnum" min="0" max="9">
+</tr>
+
+<tr>
+	<td>Email id::</td>
+	<td><input type="email" name="email">
+</tr>
+
+<tr>
+	<td>Independence Day week::</td>
+	<td><input type="week" name="fredomweek">
+</tr>
+
+<tr>
+	<td>Instal url::</td>
+	<td><input type="url" name="instaurl">
+</tr>
+
+<tr>
+	<td>favorite search string::</td>
+	<td><input type="search" name="ss">
+</tr>
+
+<tr>
+	<td>Incom range::</td>
+	<td><input type="range" name="incom" min="10000" max="100000" title="10000 to 100000">
+</tr>
+
+<tr>
+	<th><input type="submit" value="register"></th>
+	<th><input type="reset" value="cancle"></th>
+</tr>
+
+</table>
+</form>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h1 style="color:red;text-align:center;">Working with multiple submit buttons and hyperlinks</h1>
+
+<form action="arithurl" method="POST">
+<table border="0" align="center" bgcolor="cyan">
+<tr>
+<td>Value:1</td>
+<td><input type="text" name="t1"></td>
+</tr>
+
+<tr>
+<td>Value:2</td>
+<td><input type="text" name="t2"></td>
+</tr>
+
+<tr>
+<td>
+<input type="submit" name="s1" value="add">
+<input type="submit" name="s1" value="sub">
+</td>
+
+<td>
+<input type="submit" name="s1" value="mul">
+<input type="submit" name="s1" value="Div">
+</td>
+</tr>
+<!-- we can wright it as:-
+ <tr>
+<td>
+<input type="submit" name="s1" value="add">
+<input type="submit" name="s2" value="sub">
+</td>
+
+<td>
+<input type="submit" name="s3" value="mul">
+<input type="submit" name="s4" value="Div">
+</td> -->
+</tr>
+
+</table>
+</form>
+
+<a href="arithurl?s1=link1">Get Wish Message</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="arithurl?s1=link2">Get season name</a>
+</body>
+</html>

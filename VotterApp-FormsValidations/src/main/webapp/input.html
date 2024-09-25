@@ -1,0 +1,50 @@
+<!-- for server side:-
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h1 style="color:red;text-align:center">HTML to Servlet communication using forms</h1>
+
+<form action="voteurl" method="POST">
+person name::<input type="text" name="pname">
+person age::<input type="text" name="page">
+person address::<input type="text" name="paddrs">
+<input type="submit" value="Check Voting Eligibility">
+</form>
+<br><br>
+<h1 style="color:red;text-align:center"><a href="voterurl">get System Dte</a></h1>
+
+ <a href="voteurl">get System Date</a>
+</body>
+</html> -->
+
+
+<!-- for client side -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>  
+<body>
+<h1 style="color:red;text-align:center">HTML to Servlet communication using forms</h1>
+ 
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script type="text/javascript" src="js/validation.js"></script>
+
+
+<form action="voteurl" method="GET" onsubmit="return validate(this)">
+person name::<input type="text" name="pname"><span id="pnameErr"></span><br>
+person age::<input type="text" name="page"><span  id="pageErr"></span><br>
+person address::<input type="text" name="paddrs"><span id="paddrsErr"></span><br>
+<input type="submit" value="Check Voting Eligibility">
+<input type="hidden" name="vstatus" value="disabled">
+</form>
+
+</body>
+</html>
